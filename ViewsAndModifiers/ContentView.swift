@@ -15,7 +15,21 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
         }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+        .background(.pink)
+        
+        Button("hello world") {
+            print(type(of: self.body))
+        }
+        .frame(width: 200, height: 200)
+        .background(.red)
         .padding()
+        .background(.blue)
+        .padding()
+        .background(.green)
+        .padding()
+        .background(.orange)
+        
     }
 }
 
